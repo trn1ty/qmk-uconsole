@@ -65,7 +65,11 @@ This provides a quick two-state toggle for precise pointer adjustments.
 
 ## 🎯 Installation Guide
 
-**⚠️ WARNING:** Use SSH or an external keyboard when performing these operations. In case of issues, you'll still be able to interact with the device to re-flash or troubleshoot.
+**⚠️ WARNING:**
+Don't install a firmware image without another input method, like an external
+keyboard or SSH connection, or you won't have any way to fix it if it fails.
+The uConsole keyboard is an independent USB device, so even if it has issues
+the rest of the unit is unaffected.
 
 ### Prerequisites
 
