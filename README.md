@@ -28,6 +28,16 @@ Perfect for verifying your firmware installation and familiarizing yourself with
 
 ## 🎹 Special Key Behaviors
 
+* **Remapped A/B/X/Y in keyboard mode:**
+| Key    | Gamepad mode    | Keyboard mode
+|--------|-----------------|--------------
+| A      | `JS_0` (A)      | Execute (`KC_EXECUTE`)
+| B      | `JS_1` (B)      | Stop    (`KC_STOP`)
+| X      | `JS_2` (X)      | System Request (`KC_SYSTEM_REQUEST`)
+| Y      | `JS_3` (Y)      | Menu    (`KC_MENU`)
+| Select | `JS_4` (Select) | Select  (`KC_SELECT`)
+| Start  | `JS_5` (Start)  | Super   (`KC_LEFT_GUI`)
+
 * **Tap-Hold Keys (Letters, Numbers & Special Characters):** Most alphabetic keys, numbers, and special character keys support tap-hold functionality:
     * **Tap (< 200ms)** — Sends the lowercase letter or base character (e.g., `a`, `1`, `-`)
     * **Hold (≥ 200ms)** — Sends the uppercase letter or shifted symbol (e.g., `A`, `!`, `_`)
