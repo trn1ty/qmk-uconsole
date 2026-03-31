@@ -96,8 +96,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [LY0] = LAYOUT(
 	/* JS_0 A -> Execute
 	 * JS_1 B -> Stop
-	 * JS_3 Y -> Menu
-	 * JS_2 X -> SysRq */   // formerly JS_0,    JS_1,    JS_2,    JS_3,
+	 * JS_2 Y -> Menu
+	 * JS_3 X -> SysRq */   // formerly JS_0,    JS_1,    JS_2,    JS_3,
         KC_UP,   KC_DOWN, KC_LEFT, KC_RGHT, KC_EXEC, KC_STOP, KC_SYRQ, KC_MENU,
         KC_LSFT, KC_RSFT, KC_LCTL, KC_RCTL, KC_LALT, MS_BTN1, KC_RALT, MS_BTN2,
         MS_BTN3, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
