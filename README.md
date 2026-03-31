@@ -29,6 +29,7 @@ Perfect for verifying your firmware installation and familiarizing yourself with
 ## 🎹 Special Key Behaviors
 
 * **Remapped A/B/X/Y in keyboard mode:**
+
 | Key    | Gamepad mode    | Keyboard mode
 |--------|-----------------|--------------
 | A      | `JS_0` (A)      | Execute (`KC_EXECUTE`)
