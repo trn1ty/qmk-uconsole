@@ -94,16 +94,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      *
      */
     [LY0] = LAYOUT(
-	/* JS_0 A -> Execute
-	 * JS_1 B -> Stop
-	 * JS_2 Y -> Menu
-	 * JS_3 X -> SysRq */   // formerly JS_0,    JS_1,    JS_2,    JS_3,
+        /* JS_0 A -> Execute
+         * JS_1 B -> Stop
+         * JS_2 Y -> Menu
+         * JS_3 X -> SysRq */   // formerly JS_0,    JS_1,    JS_2,    JS_3,
         KC_UP,   KC_DOWN, KC_LEFT, KC_RGHT, KC_EXEC, KC_STOP, KC_SYRQ, KC_MENU,
         KC_LSFT, KC_RSFT, KC_LCTL, KC_RCTL, KC_LALT, MS_BTN1, KC_RALT, MS_BTN2,
         MS_BTN3, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
 
-	/* JS_4 Select -> (Keyboard) Select
-	 * JS_5 Start  -> Left GUI */
+        /* JS_4 Select -> (Keyboard) Select
+         * JS_5 Start  -> Left GUI */
         KC_SELECT, KC_LGUI, KC_VOLD, LH_GRV, LH_LBRC, LH_RBRC, LH_MINS, LH_EQL,
         LH_1,      LH_2,    LH_3,    LH_4,    LH_5,    LH_6,    LH_7,    LH_8,
         LH_9,      LH_0,    KC_ESC,  KC_TAB,  KC_NO,   KC_NO,   KC_NO,   KC_NO,
