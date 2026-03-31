@@ -76,12 +76,12 @@ the rest of the unit is unaffected.
 Before starting, ensure you have the necessary tools installed on your uConsole:
 
 1. **Install DFU utilities:**
-   ```bash
+   ```sh
    sudo apt install -y dfu-util
    ```
 
 2. **Download the original stock firmware package:**
-   ```bash
+   ```sh
    wget https://github.com/clockworkpi/uConsole/raw/master/Bin/uconsole_keyboard_flash.tar.gz
    tar zxvf uconsole_keyboard_flash.tar.gz
    cd uconsole_keyboard_flash
@@ -103,7 +103,7 @@ If you're upgrading from the original ClockworkPi firmware:
    Open `maple_upload` and change all delay values from `750` to `1500` milliseconds. This prevents "serial port not ready" errors.
 
 2. **Flash the firmware:**
-   ```bash
+   ```sh
    sudo ./maple_upload ttyACM0 2 1EAF:0003 clockworkpi_uconsole_default.bin
    ```
 ---
@@ -113,7 +113,7 @@ If you're upgrading from the original ClockworkPi firmware:
 If you already have QMK installed and want to update:
 
 1. **Run the DFU utility:**
-   ```bash
+   ```sh
    sudo dfu-util -w -d 1eaf:0003 -a 2 -D clockworkpi_uconsole_default.bin -R
    ```
 
@@ -141,7 +141,7 @@ If this is bricked after reboot, Don't panic if your keyboard becomes unresponsi
 ![Bootloading illustration](https://github.com/j1n6/qmk-uconsole/blob/main/images/uconsole%20keyboard%20bootloading.jpeg?raw=true)
 
 3. **Flash the stock firmware:**
-   ```bash
+   ```sh
    cd uconsole_keyboard_flash
    sudo ./flash
    ```
