@@ -119,19 +119,22 @@ If you already have QMK installed and want to update:
 
 2. **Enter bootloader mode:**
    
-   When you see `waiting for device, exit with ctrl-C`, press these three keys **simultaneously**:
-   
-   **`Left Alt` + `Right Alt` + `Start`**
+When dfu-util says `waiting for device, exit with ctrl-C`, press **Left Alt**,
+**Right Alt**, and **Start**, all **simultaneously**.
 
-   After installing the QMK firmware, bootload has 2-3 seconds window open for uploading firmware. Otherwise it will verify the existing firmware and functional as normal.
+After installing the QMK firmware, the bootloader has a 2-3 second window for
+uploading firmware. Otherwise it will verify the existing firmware and continue
+to function normally.
 
 ---
 
 ### 🆘 Recovery: Unbricking Your Keyboard
 
-In some rare cases, the keyboard did enter into the DFU mode, however, the firmware did not flash (keep showing waiting or ctrl+c to cancel) and keyboad is not responsive, try to reboot the OS then flash again.
+In some rare cases, the keyboard will have entered the DFU mode, but the
+firmware won't have flashed and the keyboard won't respond to input. If this
+happens, try rebooting the operating system and repeating the flashing steps.
 
-If this is bricked after reboot, Don't panic if your keyboard becomes unresponsive! Follow these steps to restore it:
+If the keyboard remains non-functional, don't panic! Follow these steps:
 
 1. **Connect the micro-USB cable** from your uConsole to the keyboard
 
