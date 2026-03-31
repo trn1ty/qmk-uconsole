@@ -74,7 +74,7 @@ const key_override_t vol_key_override =
 
 const key_override_t *key_overrides[] = {&vol_key_override};
 
-const uint16_t PROGMEM bootloader_combo[] = {KC_LALT, KC_RALT, JS_5, COMBO_END};
+const uint16_t PROGMEM bootloader_combo[] = {KC_LALT, KC_RALT, KC_LGUI, COMBO_END};
 combo_t key_combos[] = {COMBO(bootloader_combo, QK_BOOT)};
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -148,18 +148,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /*
      * Layer 2: Gamepad (Toggled by Fn+G)
      *
-     *   (JS_L)           (   ) (   )          (   ) (   )
-     * (JS_U) (JS_D)                             (   ) (   )
+     *   (JS_L)           (   ) (   )          ( Y ) ( X )
+     * (JS_U) (JS_D)                             ( B ) ( A )
      *   (JS_R)                                   (   )
      *
+     * (   )(Sel)(Sta)     (   )(   )(   )(   )(   )(   )(   )
      * [Note: D-pad keys mapped to Joystick Axis]
      */
     [LY2] = LAYOUT(
-        JS_LEFT, JS_RGHT, JS_UP,   JS_DOWN, _______, _______, _______, _______,
+        JS_LEFT, JS_RGHT, JS_UP,   JS_DOWN, JS_0,    JS_1,    JS_2,    JS_3,
         _______, _______, _______, _______, _______, _______, _______, _______,
         _______, _______, _______, _______, _______, _______, _______, _______,
 
-        _______, _______, _______, _______, _______, _______, _______, _______,
+        JS_4,    JS_5,    _______, _______, _______, _______, _______, _______,
         _______, _______, _______, _______, _______, _______, _______, _______,
         _______, _______, _______, _______, _______, _______, _______, _______,
         _______, _______, _______, _______, _______, _______, _______, _______,
@@ -305,7 +306,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     case MO(LY1):
       // Fn: only perform normal layer switching; do not toggle scroll mode
       return true;  // Allow normal layer switching to continue
-    case JS_4:
+    case KC_SELECT: case JS_4:
       // Select key enables scroll mode while held (preserve tap behavior)
       select_button_pressed = record->event.pressed;
       return true;
